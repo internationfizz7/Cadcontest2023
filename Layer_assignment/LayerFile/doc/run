@@ -1,0 +1,23 @@
+					#3tier
+./LA -format 1 -bench bench/GSRC_HARD/n100/n100 -nparts 3 -rseed $6129  -output 1 -OutputFile ./out/n100
+#./LA -format 1 -bench bench/GSRC_HARD/n200/n200 -nparts 3 -rseed $6129  -output 1
+#./LA -format 1 -bench bench/GSRC_HARD/n300/n300 -nparts 3 -rseed $6129  -output 1
+
+					#4tier
+#./LA -format 1 -bench bench/GSRC_HARD/n100/n100 -nparts 4 -rseed $1333 -output 3
+#./LA -format 1 -bench bench/GSRC_HARD/n100/n100 -nparts 4 
+#./LA -format 1 -bench bench/GSRC_HARD/n200/n200 -nparts 4
+#./LA -format 1 -bench bench/GSRC_HARD/n300/n300 -nparts 4 
+
+#./LA -format 1 -bench bench/GSRC_SOFT/n100/n100 -nparts 4 -rseed $556 -addName $100 
+#./LA -format 1 -bench bench/GSRC_SOFT/n200/n200 -nparts 4 -rseed $556 -addName $200 
+#./LA -format 1 -bench bench/GSRC_SOFT/n300/n300 -nparts 4 -rseed $556 -addName $300 
+
+#./LA -format 2 -bench bench/hb+/ibm18 -nparts 3 
+
+
+
+
+
+
+

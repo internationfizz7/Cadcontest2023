@@ -1,0 +1,9 @@
+This program is the power density-aware FM based tier assignment.
+The DIFFERENT to the other program is that it can set the power density constraint of the top tier.
+
+Usage:
+ ./run.sh <bench number> <mode> <top power density ratio>
+
+"mode" is GSRC/Ibm benchmark, where GSRC is 0 and Ibm is 1
+"bench number" denote the number in the name of benchmark.
+"top power density ratio" should be set as a floating number which is between 0 to 1.

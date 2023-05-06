@@ -1,0 +1,83 @@
+# Design nets 1.0
+# Created      : 2016.03.14
+# User         : Andrew Chang
+
+NumNets : 19
+NumPins : 51
+
+NetDegree : 2
+DEC_IO B
+DEC B
+NetDegree : 2
+ISP_IO B
+ISP B
+NetDegree : 2
+LCD_IO B
+LCDC B
+NetDegree : 2
+SYS_M3 B
+M3_IO B
+NetDegree : 2
+GPU_IO B
+GPU B
+NetDegree : 2
+CA7 B
+CPU_IO B
+NetDegree : 2
+ENC_IO B
+ENC B
+NetDegree : 2
+I_RU_IP_1 B
+I_RU_IP_2 B
+NetDegree : 4
+I_MU B
+I_DATA1_X16 B
+MM3K B
+ISP B
+NetDegree : 3
+I_CMD_ADD B
+SYS_M3 B
+GPU B
+NetDegree : 4
+GPU B
+CA7 B
+DDR_Ctrl B
+TL420 B
+NetDegree : 3
+I_DATA1_X16 B
+AlwaysOn B
+DEC B
+NetDegree : 3
+I_DATA0_X16 B
+CA7 B
+SYS_A7 B
+NetDegree : 4
+CA7 B
+AlwaysOn B
+GPU B
+DDR_Ctrl B
+NetDegree : 4
+I_RU_IP_1 B
+I_RU_IP_2 B
+NoC B
+ISP B
+NetDegree : 2
+NoC B
+SYS_M3 B
+NetDegree : 3
+DDR_Ctrl B
+SYS_A7 B
+ENC B
+NetDegree : 3
+MM3K B
+I_MU B
+SYS_A7 B
+NetDegree : 2
+LCDC B
+SYS_M3 B
+
+
+
+
+
+

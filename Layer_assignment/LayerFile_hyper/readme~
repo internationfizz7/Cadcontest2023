@@ -1,0 +1,14 @@
+This program is the power density-aware FM based tier assignment.
+It uses the hyperparameter optimization to 
+
+Usage:
+ ./run.sh <bench number> <mode> 
+
+"mode" is GSRC/Ibm benchmark, where GSRC is 0 and Ibm is 1
+"bench number" denote the number in the name of benchmark.
+
+EX.
+	./run.sh 100 0 is for GSRC n100
+	./run,sh 01 1  is for ibm01
+	
+

@@ -1,0 +1,48 @@
+#if some source files in the same folder that you don't want to compile
+#use this to select specific source file
+
+DIR_INC = ./include
+DIR_SRC = ./src
+#-----
+SRCS:= ${wildcard $(DIR_SRC)/*.cpp $(DIR_SRC)/*.c $(DIR_SRC)/*.cc}      #this use wildcard function
+#-----
+
+OBJS:= ${patsubst %.c, %.o, $(SRCS)}   #this will replace *.c to *.o by patsubst function
+OBJS:= ${patsubst %.cpp, %.o, $(OBJS)} # `:=` single expend
+OBJS:= ${patsubst %.cc, %.o, $(OBJS)}  # `=`  recursively expend
+
+TARGET = LA
+
+CXX = g++ 
+CXXFLAG = -O3 -Wall -g $(INCDIR) $(LIBDIR) $(LIBS)
+CXXFLAGS = -O3 -Wall -g -I$(HMETIS_ROOT)/include $(DEBUG_TAG) -I$(DIR_INC) 
+
+
+HMETIS_ROOT = ../../Package/hmetis-1.5-linux
+HMETIS = -I$(HMETIS_ROOT)/include -L$(HMETIS_ROOT)/lib -lhmetis
+
+#HMETIS_ROOT = /home/shan/hmetis-1.5-linux
+#HMETIS = -L$(HMETIS_ROOT) 
+
+LIBS = -lm $(HMETIS)
+
+$(TARGET):$(SRCS) $(HADS) $(OBJS)
+	$(CXX) -o $(TARGET) $(OBJS) $(CXXFLAG)
+
+#this use suffix rule $@ $< and pattern rule %
+#$@ is target
+#$< is first prerequest
+#$? is all prerequest, exclude the file without modify
+#$^ is all prerequest
+
+%.o : %.c
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+%.o: %.cc
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(TARGET) $(DIR_SRC)/*.o *.o core.*

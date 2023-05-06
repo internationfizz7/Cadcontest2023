@@ -1,0 +1,33 @@
+NumSoftRectangularBlocks : 11
+NumHardRectangularBlocks : 8
+NumTerminals : 7
+
+NoC softrectangular 64056 0.333 3.000
+SYS_M3 softrectangular 3701639 0.333 3.000
+ISP softrectangular 1979228 0.333 3.000
+DDR_Ctrl softrectangular 330819 0.333 3.000
+TL420 softrectangular 403914 0.333 3.000
+AlwaysOn softrectangular 1016640 0.333 3.000
+ENC softrectangular 1160438 0.333 3.000
+MM3K softrectangular 765313 0.333 3.000
+DEC softrectangular 1612390 0.333 3.000
+SYS_A7 softrectangular 864086 0.333 3.000
+LCDC softrectangular 845245 0.333 3.000
+I_RU_IP_2 hardrectilinear 4 (0, 0) (0, 350) (905, 350) (905, 0)
+I_RU_IP_1 hardrectilinear 4 (0, 0) (0, 350) (615, 350) (615, 0)
+I_MU hardrectilinear 4 (0, 0) (0, 565) (490, 565) (490, 0)
+I_CMD_ADD hardrectilinear 4 (0, 0) (0, 475) (960, 475) (960, 0)
+GPU hardrectilinear 4 (0, 0) (0, 2050) (2400, 2050) (2400, 0)
+I_DATA1_X16 hardrectilinear 4 (0, 0) (0, 475) (1250, 475) (1250, 0)
+I_DATA0_X16 hardrectilinear 4 (0, 0) (0, 475) (1250, 475) (1250, 0)
+CA7 hardrectilinear 4 (0, 0) (0, 1350) (1930, 1350) (1930, 0)
+
+DEC_IO terminal 
+ISP_IO terminal
+LCD_IO terminal 
+M3_IO terminal 
+GPU_IO terminal 
+CPU_IO terminal 
+ENC_IO terminal 
+
+

@@ -1,0 +1,19 @@
+==========Result Info==========
+TSV Number:
+  Tier 0 : 721
+  Total : 721
+Module Area:
+  Tier 0 : 138116
+  Tier 1 : 141543
+Power Density: 
+  Tier 0 : 0.0050412
+  Tier 1 : 0.00661954
+Temperature:
+  Tier 0 : 13.9692
+  Tier 1 : 4.50711
+Rseed=0
+RunTime= 5.36
+Dump Layer file0 Dump : ./out/n300_0.layer
+	index = 0	#TSV = 721
+
+
